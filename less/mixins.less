@@ -1,1 +1,27 @@
 // Mixins in here
+
+.mtb20() {
+    margin: 20px auto;
+}
+
+.ptb20() {
+    padding: 20px auto;
+}
+
+.link-style() {
+    text-decoration: none;
+    color: @font-color;
+    font-family: @body;
+    font-size: 1.6rem;
+    &:hover {
+        color: @hover;
+    }
+
+}
+
+.custom-flex-styling(@align, @justify, @direction) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align
+}

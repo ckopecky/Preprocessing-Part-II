@@ -1,1 +1,35 @@
 // Navigation Styles here
+
+.navigation {
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px dashed @navigation-border;
+    .custom-flex-styling(center, space-between, row);
+    @media @phone {
+        .custom-flex-styling(center, center, column);
+    }
+    h1 {
+        width: 50%;
+        @media @phone {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    nav {
+        width: 50%;
+        .custom-flex-styling(center, space-around, row);
+        @media @phone {
+            width: 100%;
+            margin-top: 20px;
+        }
+        a {
+            .link-style;
+        }
+    }
+}
+
+img {
+    margin: 0;
+}
+
